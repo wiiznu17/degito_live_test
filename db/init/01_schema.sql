@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS foods (
+  id SERIAL PRIMARY KEY,
+  title VARCHAR(30) NOT NULL,
+  description VARCHAR(150) NOT NULL,
+  badge BOOLEAN DEFAULT FALSE,
+  image TEXT NOT NULL,
+  image_alt TEXT NOT NULL,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT now()
+);
