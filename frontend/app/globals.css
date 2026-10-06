@@ -16,6 +16,74 @@ main {
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 1.5px solid #F2F2F2;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 188px;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  line-height: 18px;
+  background: #FF2A2A;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 24px;
+}
+
+.card-content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-description {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
